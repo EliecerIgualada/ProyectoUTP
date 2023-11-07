@@ -1,0 +1,125 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica;
+
+}
+::selection{
+    color: #000000;
+    background-color: #2016426f;
+}
+
+.content{
+    max-width: 450px;
+    margin: 15px auto;
+}
+.content .search {
+    width: 100%;
+    position: relative;
+}
+.search input{
+    color: #000000;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    border-radius: 55px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.079);
+    background-color: #ffffff63;
+}
+
+::placeholder{
+    color: #000000;
+}
+.search.active input{
+    border-radius: 5px 5px 0 0;
+}
+
+.search .autocomplete{
+    color: #000000;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow: auto;
+    background-color: #000000;
+    box-shadow: 0 1px 5px rgba(233, 49, 49, 0.079);
+}
+.search.active .autocomplete{
+    padding: 10px 8px;
+    opacity: 1px;
+    pointer-events: auto;
+    background-color: aqua;
+}
+.autocomplete li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+}
+.search.active .autocomplete li{
+    display: block;
+}
+.autocomplete li:hover{
+    background-color: aquamarine;
+}
+
+.search .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 66px;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.Lista-clase-contenedor{
+    background-color: transparent;
+    border: 2px solid rgba(1, 1, 1, 0.485);
+    border-radius: 20px;
+    padding: 30px 40px;
+    width: 1200px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, .02);
+    margin-bottom: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.368);
+    color: #000000;
+}
+.Lista-contenedor-articulo{
+    display: flex;
+    justify-content:left;
+    width: 80%;
+    
+
+ }
+ .Lista-contenedor-articulo label{
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+ .Lista-contenedor1{
+    display: flex;
+    text-align:center ; 
+    justify-content: right;
+    background-color: #ffffff83;  
+    flex-direction:row;
+    border-radius:15px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }
+ .Lista-contenedor1 button{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: transparent;
+    background-color: transparent;
+ }
