@@ -58,7 +58,7 @@ const RegProd = () => {
   }
   if(redirect){
     return <Navigate to="/ListProd"></Navigate>
-
+  }
   return <>
     <br />
     <h1 className='h111'>Registro de Productos</h1>
